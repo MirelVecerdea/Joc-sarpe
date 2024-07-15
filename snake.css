@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(imagini/background.webp);
+  background-size: 100% 100vh;
+  background-repeat: no-repeat;
+}
+
+#game {
+  top: 23rem;
+  opacity: 0.85;
+  margin: 20px;
+  width: 500px;
+  height: 250px;
+  border: 1px solid black;
+  position: relative;
+  background-color: rgb(115, 158, 55);
+  margin: auto;
+}
+
+#game div {
+  border: 1px solid black;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  display: inline-block;
+  background-color: green;
+}
+
+#food {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+
+#btnReset {
+  display: inline-block;
+  width: 100px;
+  padding: 0.5rem 1rem;
+  margin-left: 50px;
+  position: relative;
+  left: 46%;
+  top: 24rem;
+  color: white;
+  font-size: 1.5rem;
+  background-color: rgb(27, 156, 27);
+  border-radius: 25%;
+}
+
+.score-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 22rem;
+  gap: 5rem;
+  width: 15%;
+  height: 6rem;
+  margin: auto;
+  background-color: olive;
+  border-radius: 15%;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.score {
+  z-index: 2;
+  width: 8rem;
+  height: 3rem;
+  color: white;
+  position: relative;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem 1.3rem 3.5rem;
+  opacity: 0.8;
+  border-radius: 15%;
+}
+
+#score {
+  background-image: url(imagini/food.png);
+  background-position: left;
+  background-size: 3.4rem 3.4rem;
+  background-repeat: no-repeat;
+}
+
+#high-score {
+  background-image: url(imagini/winner.png);
+  background-position: left;
+  background-size: 3.4rem 3rem;
+  background-repeat: no-repeat;
+}
+
+/* Add your custom styling for the SweetAlert popup */
+.custom-popup-class {
+  /* Your custom styles here */
+  background-color: #ffcc00; /* Example background color */
+  color: #333; /* Example text color */
+}
